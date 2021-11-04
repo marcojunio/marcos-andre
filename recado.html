@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recado para o momo</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+  
+        body {
+          background: linear-gradient(90deg,#dd5e89, #f7bb97);
+        }
+        
+        .text{
+            padding: 20px;
+            font-family: "Special Elite", monospace;
+            font-size: 3em;
+            text-align: center;
+            overflow: hidden;
+            border-right: 2px solid rgba(255, 255, 255, 0.75);
+            color: rgba(255, 255, 255, 0.75);
+            transition: all ease-in-out 0.5s;
+        }
+
+        .text:hover{
+            transform: scale(1.05);
+        }
+    
+        .container-menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        
+        .text-menu{
+            font-family: "Special Elite", monospace;
+            font-size: 1.2em;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .container-menu p .img1{
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            float: left;
+            shape-outside: circle(50%);
+            margin: 0 25px 5px 0;
+            -webkit-shape-outside: circle(50px 100px at 50% 50%);   
+            shape-outside: circle(50px 100px at 50% 50%);
+            transition: all ease-in-out 1.5s;
+            opacity: 1;
+            z-index: 1000;
+        }
+
+        .container-menu p .img1{
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            float: left;
+            shape-outside: circle(50%);
+            margin: 0 25px 5px 0;
+            -webkit-shape-outside: circle(50px 100px at 50% 50%);   
+            shape-outside: circle(50px 100px at 50% 50%);
+            transition: all ease-in-out 1.5s;
+            opacity: 1;
+            z-index: 1000;
+        }
+
+        .juncao{
+            margin-top: 100px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .juncao .img1{
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            float: left;
+            shape-outside: circle(50%);
+            margin: 0 25px 5px 0;
+            -webkit-shape-outside: circle(50px 100px at 50% 50%);   
+            shape-outside: circle(50px 100px at 50% 50%);
+            transition: all ease-in-out 1.5s;
+            opacity: 1;
+            z-index: 1000;
+        }
+
+        .text-apoio{
+            font-family: "Calibri";
+            font-size: 1.3em;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .button-action {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: grey;
+            background-color: pink;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px rgba(153, 153, 153, 0.452)
+        }
+
+        .button-action:hover {background-color: plum;}
+
+        .button-action:active {
+            background-color: plum;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+      </style>
+</head>
+<body>
+    <body>
+        <header>
+            <div class="container-header">
+                <h2 class="text">Feliz aniversário pancinhaaa!! </h2>
+            </div>
+        </header>
+        <main>
+            <div class="container-menu">
+                <p>
+                    <img  class="img1" src="assets/img1.jpeg" alt="imagem">
+                    <span class="text-apoio">
+                        Feliz aniversário meu momo, que deus te de muitos anos de vida e muito sucesso na sua vida. Saiba que tenho muito orgulho de você meu amor, você é uma mulher guerreira e batalhadora que corre atrás dos seus objetivos e sonhos, tenho muito orgulho de ver a mulher que você é.
+                        Você não tem noção de quanto eu amo você meu amor, por mais que eu seja um ogro kkkkkkk eu te amo demais, cada dia que passa tenho mais certeza de que você é a pessoa pra minha vida inteira.
+                        por mais que as vezes eu tenha vontade de socar sua cara eu amo muito você minha boboca. Quero que aproveite muito seus 21 anos, única coisa que aumenta é os boletos kkkkkkkkkkkkkkkkkkk
+                        mas enfim, nessa data especial peço muito pela sua vida meu amor, quero que você realize todos os seus objetivos e tudo que almeja na sua vida.
+
+
+                        Amo muito você, com amor , MOMO
+                    </span>
+                </p>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <button class="button-action" id="button-action"  onclick="action()">CLIQUE AQUI</button>
+            </div>
+            <div class="juncao" id="divpai" style="display: none;">
+                <img  class="img1" src="assets/img1.jpeg" alt="">
+                <span style="font-size: 150px;margin-bottom: 30px; padding: 20px;color: white;">+</span>
+                <img  class="img1" src="assets/img2.jpeg" alt="">
+                <span style="font-size: 150px;margin-bottom: 30px; padding: 20px;color: white;">=</span>
+                <img  class="img1" src="assets/img3.jpeg" alt="">
+            </div>
+        </main>
+    </body>
+    <script>
+        const action = () => {
+            const button = document.getElementById('button-action');
+            const element = document.getElementById("divpai");
+
+            if(button.textContent == 'CLIQUE AQUI'){
+                element.style.display = '';
+
+                setTimeout(() => {
+                    alert('KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK É SACANAGEM CLICA NO OK AI')
+                }, 10);
+                button.innerHTML = "CLICA DE NOVO MOMO"
+            }else{
+                setTimeout(() => {
+                    button.innerHTML = "CLIQUE AQUI"
+                },100)
+
+                alert("EU AMO MUITO VOCÊ MINHA MULHER <3, CLICA NO OK E APROVEITA <3");
+
+                element.style.display = 'none';
+
+                setTimeout(() => {
+                    window.open('https://www.youtube.com/watch?v=biLnPkfmmsM','_blank')
+                },200)
+            }
+           
+        }
+    </script>
+</body>
+</html>
